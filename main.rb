@@ -1,5 +1,3 @@
-require 'debug'
-
 def stock_picker(stock_days)
   stock_days.each.with_index.with_object([0, 0]) do |(price, day), result|
     theo = stock_days.slice(day..-1)
